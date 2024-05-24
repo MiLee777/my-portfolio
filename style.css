@@ -65,6 +65,11 @@ a {
   text-decoration: none;
 }
 
+.home,
+.about {
+  margin-bottom: 10rem;
+}
+
 .header {
   width: 100%;
   position: fixed;
@@ -214,7 +219,7 @@ nav {
 .home__content {
   display: flex;
   justify-content: space-between;
-  padding-top: 10.5rem;
+  padding-top: 12.5rem;
   column-gap: 2rem;
   align-items: center;
 }
@@ -239,13 +244,14 @@ nav {
   margin-bottom: 1.5rem;
 }
 
-.home__btn,
-.home__social {
+.home__btns,
+.home__social,
+.about__btns {
   display: flex;
   column-gap: 10px;
 }
 
-.home__btn {
+.home__btns {
   margin-bottom: 1rem;
 }
 
@@ -254,6 +260,7 @@ nav {
   font-family: var(--font);
   border-radius: 30px;
   border: none;
+  cursor: pointer;
 }
 
 .btn a {
@@ -341,6 +348,165 @@ nav {
 @media all and (max-width: 576px) {
   .home__title {
     text-align: center;
+  }
+
+  .home__img {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+/* ABOUT */
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3rem;
+}
+
+.about__title {
+  font-size: var(--h2-font-size);
+}
+
+.about__container {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 100px;
+}
+
+.about__img img {
+  width: 350px;
+  height: 320px;
+  border-radius: 1.5rem;
+}
+
+.about__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__btns {
+  max-width: 276px;
+  padding: 2px;
+  border: 2px solid #f1f1f1;
+  border-radius: 1.5rem;
+}
+
+.btn__info {
+  background-color: var(--body-color);
+}
+
+.btn__info_active {
+  background-color: var(--green-color);
+  color: var(--container-color);
+}
+
+.about__btns,
+.about__descripsion {
+    margin-bottom: 2rem;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.about__grid li i {
+  font-size: var(--icon-font-size);
+  color: var(--green-color);
+}
+
+.about__subtitle {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  color: var(--green-color);
+  margin-bottom: 0.7rem;
+}
+
+.about__subtitle i {
+  font-size: 23px;
+}
+
+.about__education {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+}
+
+.education a {
+  color: var(--title-color-dark);
+  font-weight: var(--font-bold);
+}
+
+.education p {
+  font-size: var(--small-font-size);
+}
+
+.line {
+  margin-bottom: 0.5rem;
+}
+
+.info {
+  display: none;
+}
+
+.info__show {
+  display: flex;
+  flex-direction: column;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media all and (max-width: 992px) {
+  .about__container,
+  .about__info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__img img {
+    width: 220px;
+    height: 200px;
+    margin-bottom: 2rem;
+  }
+
+  
+
+  .info__show {
+      align-items: center;
+  }
+
+  .about__grid,
+  .about__education {
+    column-gap: 50px;
+  }
+}
+
+/* For medium devices */
+@media all and (max-width: 768px) {
+  .home__content {
+    padding-top: 3.5rem;
+  }
+
+  
+}
+
+@media all and (max-width: 576px) {
+  .home__title {
+    text-align: center;
+  }
+
+  .about__grid {
+    align-self: flex-start;
+    grid-template-columns: 1fr;
+  }
+
+  .about__education {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
   }
 }
 
