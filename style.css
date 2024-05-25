@@ -514,3 +514,60 @@ nav {
 }
 
 /* Skills */
+.skill__box {
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: center;
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1.25rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.skill__group {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem 5rem;
+}
+
+.skills__data {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 0.5rem;
+}
+
+.skills__data i {
+  font-size: 20px;
+  color: var(--green-color);
+}
+
+.skills__name {
+  color: var(--title-color-dark);
+  font-weight: var(--font-bold);
+  
+}
+
+.skills__level {
+  font-size: var(--smaller-font-size);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media all and (max-width: 992px) {
+  .skill__group {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* For medium devices */
+@media all and (max-width: 768px) {
+  .skill__group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (max-width: 576px) {
+  .skill__group {
+    grid-template-columns: 1fr;
+  }
+}
