@@ -12,7 +12,6 @@ function hambHandler(e) {
 
 
 // About
-
 document.addEventListener('DOMContentLoaded', () => {
   const infoElements = document.querySelectorAll('#info');
   const buttons = document.querySelectorAll('#about__btn');
@@ -34,6 +33,25 @@ document.addEventListener('DOMContentLoaded', () => {
     button.addEventListener('click', () => changeInfo(index));
   });
 });
+
+// Skills
+import dataSkills from "./dataSkills.js";
+
+const skills = document.querySelector('#skill__group');
+console.log(skills);
+
+dataSkills.forEach(item => {
+  const li = document.createElement('li');
+  li.classList.add('skills__data');
+  li.innerHTML = 
+  `<i class="uil uil-check-circle"></i>
+  <div>
+    <h3 class="skills__name">${ item.skill }</h3>
+    <span class="skills__level">${ item.level }</span>
+  </div>`;
+  skills.appendChild(li);
+});
+
 
 
 
