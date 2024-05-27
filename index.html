@@ -59,7 +59,7 @@
 
   <main class="main">
     <!-- HOME -->
-    <section class="home" id="home">
+    <section class="section" id="home">
       <div class="container grid">
         <div class="home__content grid">
           <div class="home__info">
@@ -102,9 +102,9 @@
     </section>
 
     <!-- ABOUT -->
-    <section class="about" id="about">
+    <section class="section" id="about">
       <div class="container grid">
-        <div class="about__content">
+        <div class="section__content">
           <h2 class="section__title">About me</h2>
           <div class="about__container">
             <div class="about__img">
@@ -176,12 +176,44 @@
     </section>
 
     <!-- SKILLS -->
-    <section class="skills" id="skills">
+    <section class="section" id="skills">
       <div class="container grid">
-        <div class="skills__content">
+        <div class="section__content">
           <h2 class="section__title">Skills</h2>
           <div class="skill__box">
             <ul class="skill__group" id="skill__group"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="portfolio">
+      <div class="container grid">
+        <div class="section__content">
+          <h2 class="section__title">Portfolio</h2>
+          <div class="portfolio__container">
+            <div>
+              <button class="btn portfolio__btn" id="btn-left"><i class="uil uil-arrow-left arrow"></i></button>
+            </div>
+            <div class="portfolio__box">
+              <div class="portfolio__grid">
+                <h3 class="potfolio__subtitle" id="technologies"></h3>
+                <h2 class="portfolio__title" id="name"></h2>
+                <p class="portfolio__description" id="description"></p>
+                <div class="portfolio__box-btn">
+                  <button class="btn"><a href="" id="project__link" target="_blank">
+                    DEMO
+                  </a></button>
+                </div>
+              </div>
+              <div class="portfolio__img">
+                <img src="" alt=""  id="image">
+              </div>
+            </div>
+            <div>
+              <button class="btn portfolio__btn" id="btn-right"><i class="uil uil-arrow-right"></i></button>
+            </div>
           </div>
         </div>
       </div>

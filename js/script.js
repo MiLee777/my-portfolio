@@ -38,7 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
 import dataSkills from "./dataSkills.js";
 
 const skills = document.querySelector('#skill__group');
-console.log(skills);
 
 dataSkills.forEach(item => {
   const li = document.createElement('li');
@@ -51,6 +50,51 @@ dataSkills.forEach(item => {
   </div>`;
   skills.appendChild(li);
 });
+
+// Portfolio
+import dataProject from "./dataProject.js";
+
+const projectName = document.querySelector('#name');
+const projectTech = document.querySelector('#technologies');
+const projectDescripsion = document.querySelector('#description');
+const projectLink = document.querySelector('#project__link');
+const projectImage = document.querySelector('#image');
+const btnLeft = document.querySelector('#btn-left');
+const btnRight = document.querySelector('#btn-right')
+
+let projectIndex = 0;
+
+window.addEventListener('load', () => {
+  loadProject(projectIndex)
+});
+btnRight.addEventListener('click', nextProject);
+btnLeft.addEventListener('click', prevProject);
+
+function loadProject(index) {
+  projectName.innerHTML = dataProject[index].title;
+  projectTech.innerHTML = dataProject[index].subtitle;
+  projectDescripsion.innerHTML = dataProject[index].description;
+  projectImage.src = dataProject[index].image;
+  projectLink.href = dataProject[index].src;
+}
+
+function nextProject() {
+  projectIndex++;
+  if(projectIndex > dataProject.length - 1) projectIndex = 0;
+  loadProject(projectIndex);
+}
+
+function prevProject() {
+  projectIndex--;
+  if(projectIndex < 0) projectIndex = dataProject.length - 1;
+  loadProject(projectIndex);
+}
+
+setInterval(() => {
+  nextProject();
+}, 5000);
+
+
 
 
 
