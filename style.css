@@ -580,7 +580,7 @@ nav {
 }
 
 .portfolio__container {
-  column-gap: 5rem;
+  column-gap: 1rem;
 }
 
 .portfolio__box {
@@ -617,25 +617,43 @@ nav {
 }
 
 .portfolio__img img {
-  width: 300px;
+  width: 20rem;
   border-radius: 20px;
 }
 
 .portfolio__btn {
-  padding: 15px 20px;
+  padding: 20px 10px;
   background-color: var(--body-color);
   color: var(--title-color);
-  border: 1px solid var(--title-color);
+  border: none;
+  cursor: pointer;
   transition: .3s;
 } 
 
 .portfolio__btn:hover {
-  background-color: var(--text-color);
-  border: 1px solid var(--text-color);
-  color: var(--container-color);
+  color: var(--green-color);
 
 }
 
 .portfolio__btn i {
-  font-size: var(--icon-font-size);
+  font-size: 2.5rem;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media all and (max-width: 876px) {
+  .portfolio__box {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .portfolio__img {
+    margin-bottom: 2rem;
+  }
+}
+
+@media all and (max-width: 560px) {
+  .portfolio__btn {
+    display: none;
+  }
 }

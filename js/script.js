@@ -90,9 +90,9 @@ function prevProject() {
   loadProject(projectIndex);
 }
 
-setInterval(() => {
-  nextProject();
-}, 5000);
+// setInterval(() => {
+//   nextProject();
+// }, 5000);
 
 
 
