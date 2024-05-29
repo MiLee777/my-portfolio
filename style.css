@@ -657,3 +657,9 @@ nav {
     display: none;
   }
 }
+
+/* Contact */
+.btn__send-message {
+  background-color: var(--title-color-dark);
+  color: var(--container-color);
+}
