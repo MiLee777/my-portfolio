@@ -111,11 +111,17 @@ function sendMail() {
 
   emailjs.send("service_vs82u9v","template_7omqp15", params).then(function(res) {
     alert('Success! ' + res.status);
+    clearForm();
   }).catch(function(error) {
     alert('Failed to send email. Error: ' + error);
   });
 }
 
+function clearForm() {
+  document.getElementById('form__name').value = '';
+  document.getElementById('form__email').value = '';
+  document.getElementById('form__text').value = '';
+}
 
 
 
