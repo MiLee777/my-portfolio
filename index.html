@@ -267,6 +267,7 @@
                     <input type="text"
                     name="name"
                     class="contact__form-input"
+                    id="form__name"
                     placeholder="Insert your name">
                 </div>
 
@@ -275,6 +276,7 @@
                     <input type="email"
                     name="email"
                     class="contact__form-input"
+                    id="form__email"
                     placeholder="Insert your mail">
                 </div>
 
@@ -282,20 +284,29 @@
                   <label for="" class="contact__form-label">Description</label>
                     <textarea name="description" cols="30" rows="10"
                     class="contact__form-input"
+                    id="form__text"
                     placeholder="Write your description"></textarea>
                 </div>
-                <button class="btn__send-message">Send message
+                <button class="btn__send-message" id="form__btn">Send message
                   <i class="uil uil-message"></i>
                 </button>
               </form>
             </div>
           </div>
         </div>
-
       </div>
     </section>
-
   </main>
   <script type="module" src="./js/script.js"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "5cBbxIvXp1Em6G2wi",
+      });
+    })();
+  </script>
 </body>
 </html>

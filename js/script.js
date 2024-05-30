@@ -94,6 +94,29 @@ function prevProject() {
 //   nextProject();
 // }, 5000);
 
+// Contact
+const formBtn = document.getElementById('form__btn');
+
+formBtn.addEventListener('click', function(e) {
+  e.preventDefault();
+  sendMail();
+});
+
+function sendMail() {
+  const params = {
+    name: document.getElementById('form__name').value,
+    email: document.getElementById('form__email').value,
+    description: document.getElementById('form__text').value
+  }
+
+  emailjs.send("service_vs82u9v","template_7omqp15", params).then(function(res) {
+    alert('Success! ' + res.status);
+  }).catch(function(error) {
+    alert('Failed to send email. Error: ' + error);
+  });
+}
+
+
 
 
 
