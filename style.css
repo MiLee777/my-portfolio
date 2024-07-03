@@ -221,9 +221,9 @@ nav {
 /* HOME */
 
 .home__content {
+  min-height: calc(100vh - (var(--heder-height) + 1.5rem));
   display: flex;
   justify-content: space-between;
-  padding-top: 12.5rem;
   column-gap: 2rem;
   align-items: center;
 }
@@ -362,6 +362,38 @@ nav {
   .home__img {
     width: 320px;
     height: 320px;
+  }
+}
+
+/* SCROLL DOWN */
+.wheel {
+  animation: scroll 2s ease infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(2.75rem);
+  }
+}
+
+.scroll__container a {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media all and (max-width: 992px) {
+  .scroll__container {
+    position: absolute;
+    bottom: 3.5rem;
   }
 }
 
