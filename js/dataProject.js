@@ -3,7 +3,7 @@ const dataProject = [
     title: 'Momentum App',
     subtitle: 'HTML, CSS, JavaScript',
     description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, accusamus dolores. Quos non voluptates tempore?',
-    image: './assets/portfolio/weather.jpg',
+    image: './assets/portfolio/momentum.jpg',
     src: 'https://milee777.github.io/momentum-app/'
   },
 
@@ -11,7 +11,7 @@ const dataProject = [
     title: 'Shelter',
     subtitle: 'HTML, CSS, Bootstrap',
     description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, accusamus dolores. Quos non voluptates tempore?',
-    image: './assets/portfolio/shelter.jpg',
+    image: './assets/portfolio/happy-place.jpg',
     src: 'https://ambitious-wholesale-chopper.glitch.me'
   },
 
@@ -19,7 +19,7 @@ const dataProject = [
     title: 'Studio Ghibli Player App',
     subtitle: 'HTML, CSS, JavaScript',
     description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, accusamus dolores. Quos non voluptates tempore?',
-    image: './assets/portfolio/ghibli.jpg',
+    image: './assets/portfolio/player.jpg',
     src: 'https://milee777.github.io/audio-player/audio-player/'
   },
 
@@ -27,7 +27,7 @@ const dataProject = [
     title: 'Unsplash Api App',
     subtitle: 'HTML, CSS, JavaScript',
     description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, accusamus dolores. Quos non voluptates tempore?',
-    image: './assets/portfolio/api.jpg',
+    image: './assets/portfolio/unsplash-api.jpg',
     src: 'https://milee777.github.io/image-galery/image-galery/'
   },
 
@@ -35,7 +35,7 @@ const dataProject = [
     title: 'Coffee Menu',
     subtitle: 'HTML, CSS, JavaScript, React',
     description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, accusamus dolores. Quos non voluptates tempore?',
-    image: './assets/portfolio/coffee.jpg',
+    image: './assets/portfolio/coffee-menu.jpg',
     src: 'https://milee777-coffee-shop-menu.netlify.app/'
   }
 

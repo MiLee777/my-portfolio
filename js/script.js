@@ -10,7 +10,6 @@ function hambHandler(e) {
   hamb.classList.toggle('active');
 }
 
-
 // About
 document.addEventListener('DOMContentLoaded', () => {
   const infoElements = document.querySelectorAll('#info');
