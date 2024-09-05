@@ -1,329 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-</head>
-<body>
-  <!-- HEADER -->
-  <header class="header">
-    <nav class="nav container">
-      <a href="" class="logo">ML</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Dia Ligai</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="assets/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <nav class="nav container">
+        <a href="" class="logo">ML</a>
 
-      <div class="nav__menu" id="menu">
-        <ul class="nav__list grid">
-          <li class="nav__item">
-            <a href="#home" class="nav__link active-link">
-              <i class="uil uil-estate nav__icon"></i>
-            Home </a>
-          </li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">
-              <i class="uil uil-user nav__icon"></i>
-            About me </a>
-          </li>
-          <li class="nav__item">
-            <a href="#skills" class="nav__link">
-              <i class="uil uil-clipboard-notes nav__icon"></i>
-            Skills </a>
-          </li>
-          <li class="nav__item">
-            <a href="#portfolio" class="nav__link">
-              <i class="uil uil-scenery nav__icon"></i>
-            Portfolio </a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">
-              <i class="uil uil-message nav__icon"></i>
-            Contact </a>
-          </li>
-        </ul>
-
-      </div>
-      <div class="hamb">
-        <div class="hamb__field" id="hamb">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+        <div class="nav__menu" id="menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="uil uil-estate nav__icon"></i>
+                Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i>
+                About me
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-clipboard-notes nav__icon"></i>
+                Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i>
+                Portfolio
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i>
+                Contact
+              </a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </nav>
-  </header>
-
-  <main class="main">
-    <!-- HOME -->
-    <section class="section" id="home">
-      <div class="container grid">
-        <div class="home__content grid">
-          <div class="home__info">
-            <h3 class="home__subtitle">web developer</h3>
-            <h1 class="home__title">Hello, my name is Mi Dia</h1>
-            <p class="home__discription">
-              I am an aspiring frontend developer with a lot of enthusiasm and a drive to create modern and user-friendly web interfaces. 
-              My goal is to turn complex tasks into simple and beautiful solutions that bring joy to users.
-            </p>
-            <div class="home__btns">
-              <button class="btn btn-contact">
-                <a href="https://wa.me/89241990988" target="_blank">
-                  Contact me
-                  <i class="uil uil-comment-dots"></i>
-                </a>
-              </button>
-              <button class="btn btn-cv">
-                <a href="https://myresume.ru/app/resume/UeqQ2t2XnwQ/download" target="_blank">
-                  Download CV
-                  <i class="uil uil-import"></i>
-                </a>
-              </button>
-            </div>
-            <div class="home__social">
-              <a href="https://www.instagram.com/lmd0615" target="_blank"><i class="uil uil-instagram"></i></a>
-              <a href="https://www.linkedin.com/feed/" target="_blank"><i class="uil uil-linkedin"></i></a>
-              <a href="https://github.com/MiLee777" target="_blank"><i class="uil uil-github"></i></a>
-              <a href="https://t.me/milee777" target="_blank"><i class="uil uil-telegram"></i></a>
-              <a href="#"><i class="uil uil-facebook-f"></i></a>
-            </div>
-          </div>
-          <div class="home__img"></div>
-        </div>
-      </div>
-      <div class="container scroll__container">
-        <a href="#about">
-          <img src="assets/scroll.svg" class="wheel"/>
-          <span>Scroll down</span>
-          <i class="uil uil-arrow-down"></i>
-        </a>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="section" id="about">
-      <div class="container grid">
-        <div class="section__content">
-          <h2 class="section__title">About me</h2>
-          <div class="about__container">
-            <div class="about__img">
-              <img src="./assets/about/photo-about.jpg" alt="Photo">
-            </div>
-            <div class="about__info">
-              <div class="about__btns">
-                <button class="btn btn__info btn__info_active" id="about__btn" data-index="0">Personal Info</button>
-                <button class="btn btn__info" id="about__btn" data-index="1">Qualifications</button>
-              </div>
-
-              <div class="info info__show" id="info">
-                <p class="about__descripsion">I am a junior frontend developer constantly striving to learn new things and improve my development skills. 
-                  I aim to write clean and readable code, paying attention to details. 
-                  I can work in a team, am ready to collaborate, and am open to feedback.
-                </p>
-                <ul class="about__grid">
-                  <li>
-                    <i class="uil uil-user-circle"></i>
-                    Mi Dia Ligai
-                  </li>
-                  <li>
-                    <i class="uil uil-calendar-alt"></i>
-                    Born on 15 June, 1994
-                  </li>
-                  <li>
-                    <i class="uil uil-at"></i>
-                    midyaleegay@gmail.com
-                  </li>
-                  <li>
-                    <i class="uil uil-map-pin-alt"></i>
-                    Bangkok, Thailand
-                  </li>
-                  <li>
-                    <i class="uil uil-phone"></i>
-                    +7 (924) 199-09-88
-                  </li>
-                </ul>
-              </div>
-
-              <div class="info" id="info">
-                <p class="about__descripsion">At the end of 2022, I left the bank after working there for six years and 
-                  began my new journey in the world of programming.
-                </p>
-                <h3 class="about__subtitle"><i class="uil uil-graduation-cap"></i>Education</h3>
-                <div class="about__education">
-                  <div class="education">
-                    <a href="https://edu-canshecode.thinkific.com/" target="_blank">CanSheCode Inc.</a>
-                    <p class="line">Frontend Developer</p>
-                    <p>2022 - present</p>
-                  </div>
-                  <div class="education">
-                    <a href="https://rs.school/" target="_blank">The Rolling Scopes</a>
-                    <p class="line">Frontend Developer</p>
-                    <p>2022 - 2023</p>
-                  </div>
-                  <div class="education">
-                    <a href="https://www.udemy.com/course/javascript-ru/?couponCode=JUST4U02223" target="_blank">Udemy, Inc.</a>
-                    <p class="line">JavaScript</p>
-                    <p>2024</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
+        <div class="hamb">
+          <div class="hamb__field" id="hamb">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
           </div>
         </div>
-      </div>
-    </section>
+      </nav>
+    </header>
 
-    <!-- SKILLS -->
-    <section class="section" id="skills">
-      <div class="container grid">
-        <div class="section__content">
-          <h2 class="section__title">Skills</h2>
-          <div class="skill__box">
-            <ul class="skill__group" id="skill__group"></ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PORTFOLIO -->
-    <section class="section" id="portfolio">
-      <div class="container grid">
-        <div class="section__content">
-          <h2 class="section__title">Portfolio</h2>
-          <div class="portfolio__container">
-            <div>
-              <button class="portfolio__btn" id="btn-left"><i class="uil  uil-angle-left-b arrow"></i></button>
-            </div>
-            <div class="portfolio__box">
-              <div class="portfolio__grid">
-                <h3 class="potfolio__subtitle" id="technologies"></h3>
-                <h2 class="portfolio__title" id="name"></h2>
-                <p class="portfolio__description" id="description"></p>
-                <div class="portfolio__box-btn">
-                  <button class="btn"><a href="" id="project__link" target="_blank">
-                    DEMO
-                  </a></button>
-                </div>
-              </div>
-              <div class="portfolio__img">
-                <img src="" alt=""  id="image">
-              </div>
-            </div>
-            <div>
-              <button class="portfolio__btn" id="btn-right"><i class="uil  uil-angle-right-b"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section" id="contact">
-      <div class="container grid">
-        <div class="section__content">
-          <h2 class="section__title">Contact me</h2>
-          <div class="contact__container">
-            <div class="contact__content">
-              <h3 class="contact__title">Talk to me</h3>
-              <div class="contact__info">
-                <div class="contact__card">
-                  <i class="bx bx-mail-send contact__card-icon"></i>
-                  <h3 class="contact__card-title">Email</h3>
-                  <span class="contact__card-data">midyaleegay@gmail.com</span>
-                  <a href="mailto:midyaleegay@gmail.com" class="contact__card-btn">
-                    Write me
-                    <i class="bx bx-right-arrow-alt contact__card-btn-icon"></i>
+    <main class="main">
+      <!-- HOME -->
+      <section class="section" id="home">
+        <div class="container grid">
+          <div class="home__content grid">
+            <div class="home__info">
+              <h3 class="home__subtitle">web developer</h3>
+              <h1 class="home__title">Hello, my name is Mi Dia</h1>
+              <p class="home__discription">
+                I am an aspiring frontend developer with a lot of enthusiasm and
+                a drive to create modern and user-friendly web interfaces. My
+                goal is to turn complex tasks into simple and beautiful
+                solutions that bring joy to users.
+              </p>
+              <div class="home__btns">
+                <button class="btn btn-contact">
+                  <a href="https://wa.me/89241990988" target="_blank">
+                    Contact me
+                    <i class="uil uil-comment-dots"></i>
                   </a>
-                </div>
-                <div class="contact__card">
-                  <i class="bx bxl-whatsapp contact__card-icon"></i>
-                  <h3 class="contact__card-title">WhatsApp</h3>
-                  <span class="contact__card-data">8(924)199-09-88</span>
-                  <a href="" class="contact__card-btn">
-                    Write me
-                    <i class="bx bx-right-arrow-alt contact__card-btn-icon"></i>
-                  </a>
-                </div>
-                <div class="contact__card">
-                  <i class="bx bxl-telegram contact__card-icon"></i>
-                  <h3 class="contact__card-title">Telegram</h3>
-                  <span class="contact__card-data">@MiLee777</span>
-                  <a href="" class="contact__card-btn">
-                    Write me
-                    <i class="bx bx-right-arrow-alt contact__card-btn-icon"></i>
-                  </a>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="contact__content">
-              <h3 class="contact__title">Write me</h3>
-              <form class="contact__form">
-                <div class="contact__form-container">
-                  <label for="" class="contact__form-label">Name</label>
-                    <input type="text"
-                    name="name"
-                    class="contact__form-input"
-                    id="form__name"
-                    placeholder="Insert your name">
-                </div>
-
-                <div class="contact__form-container">
-                  <label for="" class="contact__form-label">Mail</label>
-                    <input type="email"
-                    name="email"
-                    class="contact__form-input"
-                    id="form__email"
-                    placeholder="Insert your mail">
-                </div>
-
-                <div class="contact__form-container contact__form-area">
-                  <label for="" class="contact__form-label">Description</label>
-                    <textarea name="description" cols="30" rows="10"
-                    class="contact__form-input"
-                    id="form__text"
-                    placeholder="Write your description"></textarea>
-                </div>
-                <button class="btn__send-message" id="form__btn">Send message
-                  <i class="uil uil-message"></i>
                 </button>
-              </form>
+                <button class="btn btn-cv">
+                  <a
+                    href="https://milee777.github.io/rsschool-cv/"
+                    target="_blank"
+                  >
+                    Download CV
+                    <i class="uil uil-import"></i>
+                  </a>
+                </button>
+              </div>
+              <div class="home__social">
+                <a href="https://www.instagram.com/lmd0615" target="_blank"
+                  ><i class="uil uil-instagram"></i
+                ></a>
+                <a href="https://www.linkedin.com/feed/" target="_blank"
+                  ><i class="uil uil-linkedin"></i
+                ></a>
+                <a href="https://github.com/MiLee777" target="_blank"
+                  ><i class="uil uil-github"></i
+                ></a>
+                <a href="https://t.me/milee777" target="_blank"
+                  ><i class="uil uil-telegram"></i
+                ></a>
+                <a href="#"><i class="uil uil-facebook-f"></i></a>
+              </div>
+            </div>
+            <div class="home__img"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="container grid">
+          <div class="section__content">
+            <h2 class="section__title">About me</h2>
+            <div class="about__container">
+              <div class="about__img">
+                <img src="./assets/about/photo-about.jpg" alt="Photo" />
+              </div>
+              <div class="about__info">
+                <div class="about__btns">
+                  <button
+                    class="btn btn__info btn__info_active"
+                    id="about__btn"
+                    data-index="0"
+                  >
+                    Personal Info
+                  </button>
+                  <button class="btn btn__info" id="about__btn" data-index="1">
+                    Qualifications
+                  </button>
+                </div>
+
+                <div class="info info__show" id="info">
+                  <p class="about__descripsion">
+                    I am a junior frontend developer constantly striving to
+                    learn new things and improve my development skills. I aim to
+                    write clean and readable code, paying attention to details.
+                    I can work in a team, am ready to collaborate, and am open
+                    to feedback.
+                  </p>
+                  <ul class="about__grid">
+                    <li>
+                      <i class="uil uil-user-circle"></i>
+                      Mi Dia Ligai
+                    </li>
+                    <li>
+                      <i class="uil uil-calendar-alt"></i>
+                      Born on 15 June, 1994
+                    </li>
+                    <li>
+                      <i class="uil uil-at"></i>
+                      midyaleegay@gmail.com
+                    </li>
+                    <li>
+                      <i class="uil uil-map-pin-alt"></i>
+                      Bangkok, Thailand
+                    </li>
+                    <li>
+                      <i class="uil uil-phone"></i>
+                      +7 (924) 199-09-88
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="info" id="info">
+                  <p class="about__descripsion">
+                    At the end of 2022, I left the bank after working there for
+                    six years and began my new journey in the world of
+                    programming.
+                  </p>
+                  <h3 class="about__subtitle">
+                    <i class="uil uil-graduation-cap"></i>Courses
+                  </h3>
+                  <div class="about__education">
+                    <div class="education">
+                      <a
+                        href="https://edu-canshecode.thinkific.com/"
+                        target="_blank"
+                        >CanSheCode Inc.</a
+                      >
+                      <p class="line">Frontend Developer</p>
+                      <p>2022 - present</p>
+                    </div>
+                    <div class="education">
+                      <a href="https://rs.school/" target="_blank"
+                        >The Rolling Scopes</a
+                      >
+                      <p class="line">Frontend Developer</p>
+                      <p>2022 - 2023</p>
+                    </div>
+                    <div class="education">
+                      <a
+                        href="https://www.udemy.com/course/javascript-ru/?couponCode=JUST4U02223"
+                        target="_blank"
+                        >Udemy, Inc.</a
+                      >
+                      <p class="line">JavaScript</p>
+                      <p>2024</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="container grid">
-      <div class="footer__container">
-        <div class="home__social">
-          <a href=""><i class="uil uil-instagram"></i></a>
-          <a href=""><i class="uil uil-linkedin"></i></a>
-          <a href=""><i class="uil uil-github"></i></a>
-          <a href=""><i class="uil uil-telegram"></i></a>
-          <a href=""><i class="uil uil-facebook-f"></i></a>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section" id="skills">
+        <div class="container grid">
+          <div class="section__content">
+            <h2 class="section__title">Skills</h2>
+            <div class="skill__box">
+              <ul class="skill__group" id="skill__group"></ul>
+            </div>
+          </div>
         </div>
+      </section>
 
+      <!-- PORTFOLIO -->
+      <section class="section" id="portfolio">
+        <div class="container grid">
+          <div class="section__content">
+            <h2 class="section__title">Portfolio</h2>
+            <div class="portfolio__container">
+              <div>
+                <button class="portfolio__btn" id="btn-left">
+                  <i class="uil uil-angle-left-b arrow"></i>
+                </button>
+              </div>
+              <div class="portfolio__box">
+                <div class="portfolio__grid">
+                  <h3 class="potfolio__subtitle" id="technologies"></h3>
+                  <h2 class="portfolio__title" id="name"></h2>
+                  <p class="portfolio__description" id="description"></p>
+                  <div class="portfolio__box-btn">
+                    <button class="btn">
+                      <a href="" id="project__link" target="_blank"> DEMO </a>
+                    </button>
+                  </div>
+                </div>
+                <div class="portfolio__img">
+                  <img src="" alt="" id="image" />
+                </div>
+              </div>
+              <div>
+                <button class="portfolio__btn" id="btn-right">
+                  <i class="uil uil-angle-right-b"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="container grid">
+          <div class="section__content">
+            <h2 class="section__title">Contact me</h2>
+            <div class="contact__container">
+              <div class="contact__content">
+                <h3 class="contact__title">Talk to me</h3>
+                <div class="contact__info">
+                  <div class="contact__card">
+                    <i class="bx bx-mail-send contact__card-icon"></i>
+                    <h3 class="contact__card-title">Email</h3>
+                    <span class="contact__card-data"
+                      >midyaleegay@gmail.com</span
+                    >
+                    <a
+                      href="mailto:midyaleegay@gmail.com"
+                      class="contact__card-btn"
+                    >
+                      Write me
+                      <i
+                        class="bx bx-right-arrow-alt contact__card-btn-icon"
+                      ></i>
+                    </a>
+                  </div>
+                  <div class="contact__card">
+                    <i class="bx bxl-whatsapp contact__card-icon"></i>
+                    <h3 class="contact__card-title">WhatsApp</h3>
+                    <span class="contact__card-data">8(924)199-09-88</span>
+                    <a href="" class="contact__card-btn">
+                      Write me
+                      <i
+                        class="bx bx-right-arrow-alt contact__card-btn-icon"
+                      ></i>
+                    </a>
+                  </div>
+                  <div class="contact__card">
+                    <i class="bx bxl-telegram contact__card-icon"></i>
+                    <h3 class="contact__card-title">Telegram</h3>
+                    <span class="contact__card-data">@MiLee777</span>
+                    <a href="" class="contact__card-btn">
+                      Write me
+                      <i
+                        class="bx bx-right-arrow-alt contact__card-btn-icon"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact__content">
+                <h3 class="contact__title">Write me</h3>
+                <form class="contact__form">
+                  <div class="contact__form-container">
+                    <label for="" class="contact__form-label">Name</label>
+                    <input
+                      type="text"
+                      name="name"
+                      class="contact__form-input"
+                      id="form__name"
+                      placeholder="Insert your name"
+                    />
+                  </div>
+
+                  <div class="contact__form-container">
+                    <label for="" class="contact__form-label">Mail</label>
+                    <input
+                      type="email"
+                      name="email"
+                      class="contact__form-input"
+                      id="form__email"
+                      placeholder="Insert your mail"
+                    />
+                  </div>
+
+                  <div class="contact__form-container contact__form-area">
+                    <label for="" class="contact__form-label"
+                      >Description</label
+                    >
+                    <textarea
+                      name="description"
+                      cols="30"
+                      rows="10"
+                      class="contact__form-input"
+                      id="form__text"
+                      placeholder="Write your description"
+                    ></textarea>
+                  </div>
+                  <button class="btn__send-message" id="form__btn">
+                    Send message
+                    <i class="uil uil-message"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container grid">
+        <div class="footer__container">
+          <h3>Mi Dia Ligai</h3>
+          <ul class="home__social">
+            <li>
+              <a href="https://www.instagram.com/lmd0615" target="_blank"
+                ><i class="uil uil-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/feed/" target="_blank"
+                ><i class="uil uil-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/MiLee777" target="_blank"
+                ><i class="uil uil-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://t.me/milee777" target="_blank"
+                ><i class="uil uil-telegram"></i
+              ></a>
+            </li>
+            <li>
+              <a href=""><i class="uil uil-facebook-f"></i></a>
+            </li>
+          </ul>
+          <p>© 2024</p>
+        </div>
       </div>
-
-    </div>
-  </footer>
-  <script type="module" src="./js/script.js"></script>
-  <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-  </script>
-  <script type="text/javascript">
-    (function(){
-      emailjs.init({
-        publicKey: "5cBbxIvXp1Em6G2wi",
-      });
-    })();
-  </script>
-</body>
+    </footer>
+    <script type="module" src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "5cBbxIvXp1Em6G2wi",
+        });
+      })();
+    </script>
+  </body>
 </html>

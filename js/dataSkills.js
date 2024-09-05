@@ -10,13 +10,23 @@ const dataSkills = [
   },
 
   {
-    skill: 'Bootstrap',
+    skill: 'JavaScript',
     level: 'Intermediate',
   },
 
   {
-    skill: 'JavaScript',
-    level: 'Intermediate',
+    skill: 'React',
+    level: 'Basic',
+  },
+
+  {
+    skill: 'Redux',
+    level: 'Basic',
+  },
+
+  {
+    skill: 'Node.js',
+    level: 'Basic',
   },
 
   {
@@ -25,8 +35,8 @@ const dataSkills = [
   },
 
   {
-    skill: 'React',
-    level: 'Basic',
+    skill: 'Bootstrap',
+    level: 'Intermediate',
   },
 
   {

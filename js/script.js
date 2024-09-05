@@ -89,9 +89,9 @@ function prevProject() {
   loadProject(projectIndex);
 }
 
-// setInterval(() => {
-//   nextProject();
-// }, 5000);
+setInterval(() => {
+  nextProject();
+}, 5000);
 
 // Contact
 const formBtn = document.getElementById('form__btn');
@@ -122,11 +122,7 @@ function clearForm() {
   document.getElementById('form__text').value = '';
 }
 
-
-
-
-
-
-
-
-
+// GSAP
+document.addEventListener("DOMContentLoaded", (event) => {
+  
+});
