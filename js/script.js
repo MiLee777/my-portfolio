@@ -41,11 +41,11 @@ const skills = document.querySelector('#skill__group');
 dataSkills.forEach(item => {
   const li = document.createElement('li');
   li.classList.add('skills__data');
-  li.innerHTML = 
-  `<i class="uil uil-check-circle"></i>
+  li.innerHTML =
+    `<i class="uil uil-check-circle"></i>
   <div>
-    <h3 class="skills__name">${ item.skill }</h3>
-    <span class="skills__level">${ item.level }</span>
+    <h3 class="skills__name">${item.skill}</h3>
+    <span class="skills__level">${item.level}</span>
   </div>`;
   skills.appendChild(li);
 });
@@ -79,13 +79,13 @@ function loadProject(index) {
 
 function nextProject() {
   projectIndex++;
-  if(projectIndex > dataProject.length - 1) projectIndex = 0;
+  if (projectIndex > dataProject.length - 1) projectIndex = 0;
   loadProject(projectIndex);
 }
 
 function prevProject() {
   projectIndex--;
-  if(projectIndex < 0) projectIndex = dataProject.length - 1;
+  if (projectIndex < 0) projectIndex = dataProject.length - 1;
   loadProject(projectIndex);
 }
 
@@ -96,7 +96,7 @@ setInterval(() => {
 // Contact
 const formBtn = document.getElementById('form__btn');
 
-formBtn.addEventListener('click', function(e) {
+formBtn.addEventListener('click', function (e) {
   e.preventDefault();
   sendMail();
 });
@@ -108,10 +108,10 @@ function sendMail() {
     description: document.getElementById('form__text').value
   }
 
-  emailjs.send("service_vs82u9v","template_7omqp15", params).then(function(res) {
+  emailjs.send("service_vs82u9v", "template_7omqp15", params).then(function (res) {
     alert('Success! ' + res.status);
     clearForm();
-  }).catch(function(error) {
+  }).catch(function (error) {
     alert('Failed to send email. Error: ' + error);
   });
 }
@@ -123,6 +123,79 @@ function clearForm() {
 }
 
 // GSAP
-document.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("DOMContentLoaded", () => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  const btnAnimation = () => {
+    const tlHomeBtn = gsap.timeline({ repeat: -1, repeatDelay: 5 });
+    tlHomeBtn.to('.btn-contact', { rotate: 30, duration: .12 })
+      .to('.btn-contact', { rotate: -30, duration: .12 })
+      .to('.btn-contact', { rotate: 30, duration: .12 })
+      .to('.btn-contact', { rotate: 0, duration: .12 });
+    return tlHomeBtn;
+  }
+
+  const timeLineHome = gsap.timeline({ default: { duration: 1 } });
+  timeLineHome.from('.home__subtitle', { opacity: 0, y: 30 })
+    .from('.home__title', { opacity: 0, y: 30 })
+    .from('.home__discription', { opacity: 0, y: 30 })
+    .from('.home__btns', { opacity: 0, y: 30 })
+    .from('.home__social', { opacity: 0, y: 30 })
+    .add(btnAnimation)
+    .from('.home__img', { opacity: 0, y: -30 })
+    .from('.nav', { opacity: 0, y: -30 });
+
+  const timeLineAbout = gsap.timeline({
+    default: { duration: 1 }, scrollTrigger:
+    {
+      trigger: '.about__section',
+      start: 'top 80%',
+      toggleActions: 'play none none none',
+    }
+  });
+  timeLineAbout.from('.about__title', { opacity: 0, y: -50 })
+    .from('.about__img', { opacity: 0, x: -100 })
+    .from('.about__info', { opacity: 0, x: 100 });
+
+  const skillsBoxAnimation = () => {
+    const tlSkillsBox = gsap.timeline();
+    tlSkillsBox.to('.skill__box', { rotate: 10, duration: .2 })
+      .to('.skill__box', { rotate: -10, duration: .2 })
+      .to('.skill__box', { rotate: 10, duration: .2 })
+      .to('.skill__box', { rotate: 0, duration: .2 });
+    return tlSkillsBox;
+  }
+
+  const timeLineSkills = gsap.timeline({
+    default: { duration: 1 }, scrollTrigger:
+    {
+      trigger: '.skills__section',
+      start: 'top 80%',
+      end: 'bottom top',
+      toggleActions: 'play reverse play reverse',
+    }
+  });
+
+  timeLineSkills.from('.skills__title', { opacity: 0, y: -50 })
+    .add(skillsBoxAnimation);
+
+  gsap.from('.works__title', {
+    opacity: 0, y: -50, scrollTrigger:
+    {
+      trigger: '.works__title',
+      start: 'top 80%',
+      toggleActions: 'play none none none'
+    }
+  });
   
+  gsap.from('.contact-me__title', {
+    opacity: 0, y: -50, scrollTrigger:
+    {
+      trigger: '.contact-me__title',
+      start: 'top 80%',
+      toggleActions: 'play none none none'
+    }
+  });
 });
+
+
