@@ -302,7 +302,7 @@ nav {
 }
 
 .home__img {
-  background-image: url(/my-portfolio/assets/hero/photo.jpg);
+  background-image: url(../my-portfolio/assets/hero/photo.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
