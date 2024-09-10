@@ -93,6 +93,46 @@ setInterval(() => {
   nextProject();
 }, 5000);
 
+const portfolioBox = document.getElementById('portfolio__box');
+portfolioBox.addEventListener('touchstart', handleTouchStart, false);
+portfolioBox.addEventListener('touchmove', handleTouchMove, false);
+
+let x1 = null;
+let y1 = null;
+
+function handleTouchStart(event) {
+  const firstTouch = event.touches[0];
+  x1 = firstTouch.clientX;
+  y1 = firstTouch.clientY;
+}
+
+function handleTouchMove(event) {
+  if (!x1 || !y1) {
+    return false;
+  }
+
+  let x2 = event.touches[0].clientX;
+  let y2 = event.touches[0].clientY;
+  let xDiff = x2 - x1;
+  let yDiff = y2 - y1;
+
+  if (Math.abs(xDiff) > Math.abs(yDiff)) {
+    if (xDiff > 0) {
+      nextProject();
+    } else {
+      prevProject();
+    }
+  } else {
+    if (yDiff > 0) {
+      nextProject();
+    } else {
+      prevProject();
+    }
+  }
+  x1 = null;
+  y2 = null;
+}
+
 // Contact
 const formBtn = document.getElementById('form__btn');
 
@@ -143,7 +183,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .from('.home__social', { opacity: 0, y: 30 })
     .add(btnAnimation)
     .from('.home__img', { opacity: 0, y: -30 })
-    .from('.nav', { opacity: 0, y: -30 });
+    .from('.nav', { opacity: 0 });
 
   const timeLineAbout = gsap.timeline({
     default: { duration: 1 }, scrollTrigger:
@@ -159,9 +199,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const skillsBoxAnimation = () => {
     const tlSkillsBox = gsap.timeline();
-    tlSkillsBox.to('.skill__box', { rotate: 10, duration: .2 })
-      .to('.skill__box', { rotate: -10, duration: .2 })
-      .to('.skill__box', { rotate: 10, duration: .2 })
+    tlSkillsBox.to('.skill__box', { rotate: 5, duration: .2 })
+      .to('.skill__box', { rotate: -5, duration: .2 })
+      .to('.skill__box', { rotate: 5, duration: .2 })
       .to('.skill__box', { rotate: 0, duration: .2 });
     return tlSkillsBox;
   }
@@ -187,7 +227,7 @@ document.addEventListener("DOMContentLoaded", () => {
       toggleActions: 'play none none none'
     }
   });
-  
+
   gsap.from('.contact-me__title', {
     opacity: 0, y: -50, scrollTrigger:
     {
@@ -197,5 +237,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
-

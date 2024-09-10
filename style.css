@@ -672,10 +672,6 @@ nav {
 
 /* Contact */
 .contact__container {
-  /* display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  column-gap: 8rem; */
   display: grid;
   grid-template-columns: repeat(2, max-content);
   column-gap: 8rem;

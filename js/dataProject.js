@@ -9,7 +9,7 @@ const dataProject = [
 
   {
     title: 'Cozy House (shelter)',
-    subtitle: 'HTML, CSS, JavaScript, GSAP',
+    subtitle: 'HTML, CSS, JavaScript',
     description: 'This is a website for the "Cozy House" shelter, providing information about the shelter, pets available for adoption, ways to help the shelter, and contact details. The website features a responsive design, a modal popup for pet details, and a hamburger menu for easy navigation on mobile devices.',
     image: './assets/portfolio/cozy-house.jpg',
     src: 'https://rolling-scopes-school.github.io/milee777-JSFEPRESCHOOL2024Q2/shelter/'
