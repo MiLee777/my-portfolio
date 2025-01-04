@@ -89,10 +89,6 @@ function prevProject() {
   loadProject(projectIndex);
 }
 
-setInterval(() => {
-  nextProject();
-}, 5000);
-
 const portfolioBox = document.getElementById('portfolio__box');
 portfolioBox.addEventListener('touchstart', handleTouchStart, false);
 portfolioBox.addEventListener('touchmove', handleTouchMove, false);
